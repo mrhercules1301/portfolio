@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="author" content="roha">
+<meta name="build" content="2016.2.8">
+<meta name="content-language" content="ko">
+<meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="robots" content="index, follow">
-<title></title>	
-<link rel="stylesheet" href="css/main.css">
+<meta name="Resource-type" content="Document" />
+<title>이상근의 포트폴리오</title>	
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/examples.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
 	
 <!--[if lt IE 9]>
 <script src="js/IE9.js"></script>
@@ -23,26 +33,414 @@
 <script src="js/IE7.js"></script>
 <![endif]-->	
 
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
 </head>
 <body>
-	<section>
-	<h1>SangGeun's Portfolio</h1>
-	<ul>
-		<li><span><a href="http://mrhercules.dothome.co.kr/kookminbank" target="_blank">kookminbank</a></span></li>
-		<li><span><a href="http://mrhercules1986.dothome.co.kr/gnu/" target="_blank">yupsaboo</a></span></li>
-		<li><span><a href="http://hercules.dothome.co.kr/brownbreath/" target="_blank">brownbreath</a></span></li>
-		<!--<li><span><a href="#" target="_blank">...ing</a></span></li> -->
+
+<ul id="menu"> 
+	<li data-menuanchor="firstPage"><a href="#firstPage">introduction</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Skills</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Front</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Back</a></li>
+	<li data-menuanchor="lastPage"><a href="#lastPage">future</a></li>
+</ul>
+
+
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<p class="title">introduction</p>
+		<h1>SangGeun's Portfolio</h1>
+		<input type="hidden" name="id" value="1" /><!-- 
+		<img src="imgs/gomjelly.jpg" alt="roha pofle images" >	 -->	
+		<p class="ko">이상근</p>
+		<p class="poiret">Lee SangGeun</p>
+
+		<!-- <p class="poiret">1987/02/28</p> -->
+		<span><span class="ko2">010-3410-1482</span>
+		<p><span class="pink">W</span>ebDeveloper</span></p>
+		<p class="ko2">mrhercules@naver.com</p>
 		
-	</ul>
-	</section>
-	<footer>
-		<ul>
-			<li>Name: SangGeun Lee</li> <li>Mobile: 010-3410-1482</li> <li>Birth: 1986,11,10
-		</ul>
-	</footer>
+	</div> 
+
+	<!-- skills	=========================== -->
+
+	<div class="section " id="section1">
+		<p class="title">skills</p>
+		
+		<div>
+			<div class="f-left clearfix">
+				<div class="skill_img_zone">
+					<h3 class="font19">SKILLS</h3>
+					<div>
+						<img src="imgs/ps-sill-icon.png" alt="ps"/>
+						<img src="imgs/html-skill-icon.png" alt="html"/>
+						<img src="imgs/css-skill-icon.png" alt="css"/>
+						<img src="imgs/js-skill-icon.png" alt="js"/>
+						<img src="imgs/web-skill-icon.png" alt="web"/>
+					</div>
+					<div>
+						<img src="imgs/ajax-skill-icon.png" alt="ajax"/>
+						<img src="imgs/oracle-skill-icon.png" alt="oracle"/>
+						<img src="imgs/java-skill-icon.png" alt="java"/>
+						<img src="imgs/jsp-skill-icon.png" alt="jsp"/>
+						<img src="imgs/spring-skill-icon.png" alt="spring"/>
+					</div>
+				</div>
+				<div>
+					<h3 class="font19">EDUCATION &amp; EXPERIENCE</h3>
+
+					<span class="ko2">2017.05-2017.10</span>
+					<p class="ko2">KH정보교육원 IOT개발환경 정보시스템 구축을 위한 자바 specialist</p>
+
+					<span class="ko2">2016.10-2017.02</span>
+					<p class="ko2">소프트플래닛 입사 - 정적 페이지 제작</p>
+
+					<span class="ko2">2016.03-2016.08</span>
+					<p class="ko2">그린컴퓨터아트학원 신촌센터 NCS과정 UI&middot;UX디자인</p>
+
+				</div>
+				<div>
+					<h3 class="font19">PERSONALITY</h3>
+					<div class="character clearfix">
+						<ul>
+							<li><p class="smko2">good stamina</p>
+							<span class="smko">체력이 좋은</span>
+							</li>
+							<br>	
+							<li><p class="smko2">positive</p>
+							<span class="smko">긍정적인</span>
+							</li>
+							<br>
+							<li><p class="smko2">passionate</p>
+							<span class="smko">열정적인</span>
+							</li>
+						</ul>
+						<ul class="bar">
+							<li class="bar1"></li>
+							<br>
+							<li class="bar2"></li>
+							<br>
+							<li class="bar3"></li>
+						</ul>
+						<ul class="smko2 ">
+							<li>100%</li>
+							<li>120%</li>
+							<li>140%</li>
+						</ul>
+					</div><!-- character -->
+				</div>
+			</div><!-- f-left -->
+		</div><!-- container -->
+
+
+
+	</div><!-- skills -->
+
+	<div class="section" id="section2">
+
+		<div class="slide"> <!-- slide start 씨큐앤앰 -->
+			<p class="title">Web publishing Portfolio</p>
+
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/secunm.png" alt="SecuNM" width="400">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;SecuNM 사이트 퍼블리싱 </span></p>
+						<p><span class="ko">제작사이트명</span> <span class="ko2"> : SecuNM</span></p>
+						<p class="ko">제작사이트주소: <a href="http://mrhercules.dothome.co.kr/secunm/" target="_blank">http://mrhercules.dothome.co.kr/secunm/</a></p>
+						<p><span class="ko">기획의도 : </span>
+							<p class="ko2">	
+								SecuNM이라는 회사 사이트르 제작 의외를 받아 시안을 토대로 제작된 사이트 입니다.
+							</p>
+						</p>
+						<p><span class="ko">작업내용 : </span> 
+						<p class="ko2">HTML / CSS / javaScript</p>
+						<p class="ko2">웹표준</p>
+						<p class="ko2">반응형</p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+
+		<div class="slide"> <!-- slide start 스킨디자인 -->
+			<p class="title">Web publishing Portfolio</p>
+
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/skindesign.png" alt="skinDesign-uk" width="350">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;스킨디자인 사이트</span></p>
+						<p><span class="ko">제작사이트명</span> <span class="ko2"> : 스킨디자인 </span></p>
+						<p class="ko">제작사이트주소: <a href="http://mrhercules1986.dothome.co.kr/skindesign/" target="_blank">http://mrhercules1986.dothome.co.kr/skindesign/</a></p>
+						<p><span class="ko">작업기간</span><span class="ko2"> : 2016년 12월 &middot; 약 4일 소요.</span></p>
+						<p><span class="ko">기획의도 : </span>
+							<p class="ko2">	
+								영국에서 운영될 피부 관련 제품 홍보 페이지 제작
+							</p>
+						</p>
+						<p><span class="ko">작업내용 : </span> 
+						<p class="ko2">HTML / CSS / jQuery </p>
+						<p class="ko2">웹표준</p>
+						<p class="ko2">반응형</p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+
+		<div class="slide"> <!-- slide start 차자주 -->
+			<p class="title">Web publishing Portfolio</p>
+
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/chajazoo.png" alt="chajazoo" width="350">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;차자주 리뉴얼 사이트</span></p>
+						<p><span class="ko">제작사이트명</span> <span class="ko2"> : 차자주 </span></p>
+						<p class="ko">제작사이트주소: <a href="http://mrhercules1986.dothome.co.kr/chajazoo/" target="_blank">http://mrhercules1986.dothome.co.kr/chajazoo/</a></p>
+						<p><span class="ko">작업기간</span><span class="ko2"> : 2016년 12월 &middot; 약 3일 소요.</span></p>
+						<p><span class="ko">기획의도 : </span>
+							<p class="ko2">	
+								기존에 있는 사이트에서 Header와 Footer를 제외한 본문 내용 부분의 리뉴얼
+							</p>
+						</p>
+						<p><span class="ko">작업내용 : </span> 
+						<p class="ko2">HTML / CSS / jQuery </p>
+						<p class="ko2">웹표준</p>
+						<p class="ko2">반응형</p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+		
+		<div class="slide"> <!-- slide start 브라운브레스 -->
+			<p class="title">Web publishing Portfolio</p>
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/brownbreath.png" alt="brownbreath" width="370">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;브라운브레스 쇼핑몰 벤치마킹 퍼블리싱</span></p>
+						<p>
+							<span class="ko">제작사이트명</span>
+							<span class="ko2"> 브라운브레스 벤치마킹 사이트 </span>
+						</p>
+						<p class="ko">라쿠텐입점shop: <a href="http://hercules.dothome.co.kr/" target="_blank">http://hercules.dothome.co.kr/</a></p>
+						<p>
+							<span class="ko">기획의도 :</span>
+							<p class="ko2">	
+								퍼블리싱 교육받을 당시 두번째 개인프로젝트로 당시 아이디어를 얻고자 서칭을 하다가 브라운브레스라는 사이트가 너무 마음에 들어서 그대로 한번 만들어 보고자 했습니다. 이미지가 많아서 호스팅 용량을 아끼고자 해당 사이트의 이미지 링크를 그대로 사용했더니 현재 이미지와 about 페이지의 full-page 배경영상이 유실되어있는 상태입니다. 
+							</p>
+						</p>
+						<p>
+							<span class="ko">작업내용:</span> 
+							<p class="ko2">Wordpress</p>
+							<p class="ko2">HTML / CSS / javaScript </p>
+							<p class="ko2">웹표준</p>
+							<p class="ko2">반응형</p>
+						</p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+	
+		<div class="slide"> <!-- slide start 엽사부 -->
+			<p class="title">Web publishing Portfolio</p>
+
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/yupsaboo.png" alt="yupsaboo-mural" width="400">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;엽사부 사이트 퍼블리싱</span></p>
+						<p><span class="ko">제작사이트명</span> <span class="ko2"> : 엽사부사이트 2016</span></p>
+						<p class="ko">사이트주소: <a href="http://mrhercules1986.dothome.co.kr/gnu/" target="_blank">http://mrhercules1986.dothome.co.kr/gnu/</a></p>
+						<p><span class="ko">기획의도 : </span>
+							<p class="ko2">	
+								벽화 작업을 하고 있는 친구의 블로그 자료들을 바탕으로 간단한 갤러리 형식의 홍보 사이트를 제작해 보았습니다.
+							</p>
+						</p>
+						<p><span class="ko">작업내용 : </span> 
+						<p class="ko2">HTML / CSS / jQuery </p>
+						<p class="ko2">그누보드</p>
+						<p class="ko2">웹표준</p>
+						<p class="ko2">반응형</p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+
+		<div class="slide"> <!-- slide start 국민은행 -->
+			<p class="title">Web publishing Portfolio</p>
+
+			<div>
+				<div class="f-lft clearfix">
+					<div>
+						<img src="imgs/kookminbank.png" alt="kookminbank" width="350">
+					</div>
+					<div>
+						<p><span class="ko"> &middot;국민은행 웹사이트 퍼블리싱</span></p>
+						<p><span class="ko">제작사이트명</span> <span class="ko2"> : 국민은행 </span></p>
+						<p class="ko">제작사이트주소: <a href="http://mrhercules.dothome.co.kr/kookminbank/" target="_blank">http://mrhercules.dothome.co.kr/kookminbank/</a></p>
+						<p><span class="ko">작업기한과 완성일</span><span class="ko2"> : 2016년 5월 완성 &middot; 첫번째로 만든 <span class="pink"> 웹 사이트 </span>&middot; 약 3일 소요.</span></p>
+						<p><span class="ko">기획의도 : </span>
+							<p class="ko2">	
+								퍼블리싱 배울 당시 하드 코딩 이전에 이미지 위주로 간단하게 만들어본 사이트입니다.
+							</p>
+						</p>
+						<p><span class="ko">작업내용 : </span> 
+						<p class="ko2">HTML / CSS / jQuery </p>
+					</div>
+				</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+	</div>
+
+
+	<div class="section" id="section3">
+		<div class="slide">
+			<p class="title">Java develop</p>
+
+			<div>
+				<div class="f-lft clearfix">
+				<div>
+					<img src="imgs/House.png" alt="HouseForTommorow" width="400">
+				</div>
+				<div>
+					<p>
+						<span class="pink">파이널 프로젝트</span>
+					</p>
+					<p>
+						<span class="ko">프로젝트명</span>
+						<span class="ko2"> : 내일의집 </span>
+					</p>						
+					<p>
+						<span class="ko">작업기한과 완성일</span>
+						<span class="ko2"> 2017년 10월 완성 &middot; 약 <span class="pink"> 4주간</span><span> 개발</span>
+					</p>
+				<!-- 	<p>
+						<span class="ko">개발장소와 인원</span>
+						<span class="ko2">KH정보교육원 &middot; 6인의 파이널 프로젝트로서 개발</span>
+					</p> -->
+					<p>
+						<a href="src/LeesanggeunFinalProjectPPT.pdf" download><span class="ko">내일의집 PDF자료 다운로드</span></a>
+					</p>
+					<p>
+						<span class="ko">기획의도 : </span>
+						<p class="ko2">	
+							“내일의 집”은 <span class="pink">집 꾸미기를 좋아하는 사람들이 모인 커뮤니티 사이트</span>로 사진을 업로드 하여 자신의 집이나
+							방의 인테리어, 소품, 가구 정보 등을 다른 사람들과 <span class="pink">공유</span> 할 수 있다.
+							<span class="pink">좋아요</span> 기능으로 게시물을 저장해 언제든지 볼 수 있고, 다른 사용자와 <span class="pink">팔로우</span>를 하여 소식을 전달 받을 수 있으며, <span class="pink">해시태그</span> 검색을 사용하면 원하는 정보가 담긴 게시물에 대한 검색도 가능하다. 
+							또한 <span class="pink">게시글의 링크에 담긴 상품정보</span>를 통해 스토어에서 제품을 쉽고 빠르게 구매 할 수 있는 <span class="pink">온라인 쇼핑몰의 기능도</span> 갖추고 있는 사이트이다.
+						</p>
+					</p>
+					<p>
+						<span class="ko">사용된 기술 :</span> 
+					</p>
+					<p class="ko2">Javascript  &middot; HTML  &middot;  CSS </p>
+					<p class="ko2">Spring framework</p>
+					<p class="ko2">Java</p>
+					<p class="ko2">Oracle</p>
+					<p class="ko2">JDBC / myBatis</p>
+					<p class="ko2">Ajax</p>
+					<p class="ko2">Bootstrap</p>
+				</div>
+			</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+
+
+		<div class="slide">
+			<p class="title">Java project</p>
+			<div>
+				<div class="f-lft clearfix">
+				<div>
+					<img src="imgs/semiproject.png" alt="SUPERBsemiProject" width="400">
+				</div>
+				<div>
+					<p>
+						<span class="pink">세미 프로젝트</span>
+					</p>
+					<p>
+						<span class="ko">프로젝트명</span>
+						<span class="ko2"> Superb 사원관리시스템 </span>
+					</p>						
+					<p>
+						<span class="ko">작업기한과 완성일</span>
+						<span class="ko2"> 2017년 8월 25일 &middot; 약 <span class="pink"> 3주간</span><span> 개발</span>
+					</p>
+					<p>
+						<a href="src/LeesanggeunSemiProjectPPT.pptx" download><span class="ko">Superb PPT자료 다운로드</span></a>
+					</p>						
+					<p>
+						<span class="ko">기획의도 : </span>
+						<p class="ko2">
+							회사에서 사용 가능한 <span class="pink">인사관리시스템</span>을 구축했습니다.  <span class="pink">전자결재</span>가 가능하게 하여 서류 결재의 불필요한 이동 시간을 시켜줄 수 있는 프로그램을 만들고자 했습니다. 그리고 일반 사원들이 회사내의 공지사항이나 새소식을 저희 시스템을 통해 실시간으로 접할 수 있고, <span class="pink">관리자</span>측면에서도 사원들을 일괄 조회하고 입사나 퇴사처리할 수 있는 편리한 시스템입니다.
+						</p>
+					</p>
+					<p>
+						<span class="ko">사용기술 :</span> 
+					</p>
+					<p class="ko2">Javascript  &middot; HTML  &middot;  CSS </p>
+					<p class="ko2">Java MVC</p>
+					<p class="ko2">Oracle</p>
+					<p class="ko2">JSP</p>
+					<p class="ko2">Ajax</p>
+					<p class="ko2">Bootstrap</p>
+				</div>
+			</div><!-- f-lft -->
+			</div>
+		</div><!-- slide -->
+	</div><!-- section3 -->
+
+	<div class="section" id="section4">
+		<p class="title">Future</p>
+
+		<div>
+			<span><span class="ko2">계속해서 끊임없이 배우는 자세를 늦추지 않고 </span>
+			<p><span>도전에 도전을 거듭하고 있는 :)</span><span class="pink">F</span>ullStack</span></p>
+			<!-- <img src="imgs/2017.png" alt="2017" width="80"> </p> -->
+		</div>
+
+	</div>
+</div>
+
+
 </body>
 </html>
-
 
 
 

@@ -3,9 +3,6 @@
    License: none (public domain)
 */
 
-@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -50,40 +48,179 @@ table {
 	border-spacing: 0;
 }
 .clearfix:after { content:''; clear:both; display:block;}
-	a {text-decoration: none;}
+
+/* -------------- font --------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato|Poiret+One');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+p.title {text-transform:uppercase;color:#616161;font-size:13px;display:inline-block;letter-spacing:2px;text-decoration:underline;border-top:1px solid white;padding-top:2px;}
+.ko {margin:10px 0;font-family: 'NanumGothic', sans-serif!important;font-weight:bold;font-size:14px;}
+.ko2  {margin:10px 0;font-family: 'NanumGothic', sans-serif!important;font-size:13px;line-height:20px;}
+.smko {font-family: 'NanumGothic', sans-serif!important;font-size:11px;}
+.smko2 {font-family: 'NanumGothic', sans-serif!important;font-size:12px;text-transform:uppercase;font-weight:bold;}
+.poiret {font-family: 'Poiret One';font-size:13px;text-transform:uppercase;line-height:14px;}
+.pink {color:#fe6560;font-weight:bold;}
+.font19 {font-size:14px;font-weight:bold;margin:20px 0;}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #fe6560;
+}
+
+::selection {
+    color: #fff;
+    background: #fe6560;
+}
+
+
+/* ------- section0 introduction --------- */
+
+/*#section0 * {font-family: 'Lato', sans-serif;}
+#section0 {background:url(../imgs/giraffe-greyblur.jpg) no-repeat 100%; background-size:cover;}
+#section0 h1 {font-family: 'Poiret One', cursive;font-size:25px;letter-spacing:1px;margin:15px 0;}
+#section0 img {border-radius: 50%; width:150px;margin:30px auto; z-index: 3;}*/
+#section0 * {font-family:'Kaushan Script', cursive; position: relative; color: white;}
+#section0::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(../imgs/cup-of-coffee.jpg)no-repeat 100%; 
+  background-size:cover;
+  filter: grayscale(100%);
+}
+#section0 h1 {font-family: 'Kaushan Script', cursive; font-size:25px;letter-spacing:1px;margin:15px 0;}
+#section0 img {border-radius: 50%; width:150px;margin:30px auto; z-index: 3;}
+#section0 .pink {color: #fe6560; font-weight: bold;}
+
+
+/* --------- section1 SKILLS---------- */
+#section1 p.title {border-top: 1px solid black;}
+#section1 .ko2 {font-weight: bolder;}
+
+.f-left {text-align:center;display:inline-block;}
+.f-left > div {float:left;text-align:left;margin:50px 25px;}
+div.skill_img_zone > div{
+	margin-bottom:15px;
+}
+
+
+.character ul {float:left;margin-right:10px;}
+.character .bar li {margin-bottom:20px;}
+.character .smko2 li {margin-bottom:33.5px;}
+
+.character .bar li.bar1 {width:100px;border-radius:8px;height:10px;background-color:#05abe0;}
+.character .bar li.bar2 {width:120px;border-radius:8px;height:10px;background-color:#05abe0;}
+.character .bar li.bar3 {width:140px;border-radius:8px;height:10px;background-color:#05abe0;}
 
 
 
 
-/* -------------------- LAYOUT -------------------- */
-section {background: url("../images/100-yr-old-paper-1.jpg")no-repeat; background-size: 100%; height: 745px;}
-section h1 {font-size: 50px; text-align: center; font-family: 'Kaushan Script', cursive; padding-top: 50px;}
-section ul {width: 1300px; margin: 0 auto;}
-section ul li {width: 400px; float: left; height: 230px; margin-top: 150px; margin-right: 50px;}
-section ul li:nth-child(1) {background: url(../images/kookminbank.jpg) no-repeat; background-size: 100%;}
-section ul li:nth-child(2) {background: url(../images/yupsaboo.jpg) no-repeat; background-size: 100%;}
-section ul li:nth-child(3) {background: url(../images/brownbreath.jpg) no-repeat; background-size: 100%; margin-right: 0;}
-/*section ul li:nth-child(4) {background: url(../images/underconstruction.jpg) no-repeat; background-size: 100%; margin-right: 0;}*/
 
 
-section ul li span {display: block; text-align: center; line-height: 225px; transition: all 0.35s;}
-section ul li span a {color: #fff; font-weight: bold; font-size: 17px; letter-spacing: 2px; display: none;}
+/* -------- section2 Portfolio--------- */
+
+.f-lft {margin:40px 0;}
+.f-lft  div {width:40%;float:left;margin-right:5%;}
+.f-lft  div:first-child {text-align:right;}
+.f-lft  div:last-child {text-align:left;}
+.f-lft  div:last-child p{margin-bottom:10px;}
+#section2 a {color:#fe6560;}
 
 
-section ul li:hover span {background-color: rgba(0,0,0,.5);}
-section ul li:hover span a {display: block;}
 
 
-/* -------------------- HEADER -------------------- */
 
 
-/* -------------------- SLIDER -------------------- */
 
 
-/* -------------------- FOOTER -------------------- */
-footer {height: 200px; background: #000; color: #fff; font-family: 'Kaushan Script', cursive; box-sizing: border-box;}
-footer ul {width: 1200px; margin: 0 auto;}
-footer ul li {width: 33.33%; float: left; text-align: center; line-height: 200px;}
+
+
+
+
+
+
+
+
+
+/* ------------- section4 future -------------------- */
+
+
+#section4 * {color: black; position: relative;}
+
+#section4 ul {display:inline-flex;margin:30px 0;}
+#section4 ul li {float:left;margin-right:1%;padding:20px;border-radius:50%;width:100px; height:100px;border:1px solid #fff;line-height:100px;}
+
+#section4 div {margin:20px auto;}
+#section4 div > p {
+	margin-bottom:10px;
+}
+#section4 p.title {color: black; border-top: 1px solid black;}
+#section4::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(../imgs/table.jpg)no-repeat 100%; 
+  background-size:cover;
+  filter: grayscale(100%);
+}
+#section4 .pink {color: #fe6560; font-weight: bold;}
+
+/* -------------responsive-------------------- */
+@media screen and (max-width:400px){
+
+	p.title {display:none;}
+	#menu li {margin: 5px;}
+	#menu li a, #menu li.active a {padding: 6px 13px;}
+	#menu li a {font-size:9px;}
+
+	/*section1*/
+	#section1 {background: url(../imgs/watercolorbg2.png) no-repeat 100%;background-size: 50%; background-attachment: fixed;}
+	.character ul:last-child {display:none;}
+
+	/*section2*/
+	#section2 .f-lft  div {width:100%;float:none;margin-right:0%;}
+	#section2 .f-lft div:first-child {text-align: center;}
+	#section2 .f-lft div:first-child img {width:170px;}
+	.fp-controlArrow.fp-prev {left: 9px;border-width: 8.5px 15px 8.5px 0;}
+	.fp-controlArrow.fp-next {right: 9px;border-width: 8.5px 0 8.5px 15px;}
+	#section2 .f-lft div:last-child {
+		width: 90%;margin:20px auto;}
+
+	/*section3*/
+	#section3 .f-lft div:first-child {
+		text-align:center;
+	}
+
+	#section3 .f-lft div {
+	    width: 100%;
+	    float:none;
+	    margin-right:none;
+	}
+	#section3 .f-lft div img {
+		width:170px;
+	}
+	#section3 .f-lft div:last-child p {
+	    margin-bottom: 1px;
+	    font-size: 12px;
+	}
+	#section3 .f-lft div:last-child {
+		text-align: left;
+	    width: 90%;
+	    margin: 20px auto;
+	}
+
+	/*section4*/
+
+	#section4 div.hidden {display:none;}
+	#section4 div {width:80%; margin:0 auto;}
+
+
+}
 
 
 
